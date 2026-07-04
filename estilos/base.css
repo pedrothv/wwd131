@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Mulish:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', Arial, sans-serif;
+    background-color: #f7f7f5;
+    color: #262626;
+    line-height: 1.6;
+}
+
+h1,
+h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #0b3d2e;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}
+
+header span {
+    display: block;
+    font-size: 14px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 5px 0 15px 0;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #1c1c1c;
+    padding: 15px 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+nav a:hover {
+    color: #f2c14e;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+
+main>h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0b3d2e;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #dcdcd6;
+    overflow: hidden;
+}
+
+.card:first-of-type {
+    border-radius: 8px 8px 0 0;
+}
+
+.card:last-of-type {
+    border-radius: 0 0 8px 8px;
+    border-top: none;
+}
+
+.card h2 {
+    background-color: #0b3d2e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.card img {
+    width: 200px;
+    height: auto;
+    border-radius: 6px;
+    float: right;
+    margin: 15px 15px 15px 15px;
+}
+
+.card p {
+    padding: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #555;
+    border-top: 1px solid #dcdcd6;
+    margin-top: 30px;
+}
