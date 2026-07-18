@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 131 – Página do Brasil - Pedro Paulo Paz Pereira</title>
+    <meta name="description"
+        content="Pagina sobre o Brasil, com dados gerais e informacoes de clima. Tarefa Pagina do Pais de WDD 131. Pedro Paulo Paz Pereira.">
+    <meta name="author" content="Pedro Paulo Paz Pereira">
+
+    <link rel="stylesheet" href="estilos/local.css">
+
+    <script src="scripts/local.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Brasil</h1>
+    </header>
+
+    <div class="faixa"></div>
+
+    <main>
+        <div class="imagem-principal">
+
+            <img class="foto-grande" src="imagens/brasil-grande.webp"
+                srcset="imagens/brasil-pequeno.webp 700w, imagens/brasil-grande.webp 1160w"
+                sizes="(max-width: 700px) 100vw, 1160px"
+                alt="Paisagem representativa do Brasil">
+
+            <section class="dados">
+                <h2>Dados</h2>
+                <p><span>Área:</span> <span>8.515.767 km²</span></p>
+                <p><span>População:</span> <span>203.000.000</span></p>
+                <p><span>Capital:</span> <span>Brasília</span></p>
+                <p><span>Idiomas:</span> <span>Português</span></p>
+                <p><span>Moeda:</span> <span>Real (BRL)</span></p>
+                <p><span>Fuso Horário:</span> <span>UTC-3</span></p>
+                <p><span>Código de Discagem:</span> <span>+55</span></p>
+                <p><span>Domínio da Internet:</span> <span>.br</span></p>
+            </section>
+
+            <section class="clima">
+                <h2>Clima</h2>
+                <img class="icone-svg" src="imagens/icone-clima.svg" alt="Ícone de tempo parcialmente nublado">
+                <p><span>Temperatura:</span> <span>9 °C</span></p>
+                <p><span>Condições:</span> <span>Parcialmente nublado</span></p>
+                <p><span>Vento:</span> <span>12 km/h</span></p>
+                <p><span>Sensação Térmica:</span> <span id="sensacaoTermica"></span></p>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="anoatual"></span> Pedro Paulo Paz Pereira, Brasil</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+
+</body>
+
+</html>

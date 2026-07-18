@@ -1,0 +1,142 @@
+:root {
+  --cor-primaria: #009739;
+  --cor-secundaria: #002776;
+  --cor-destaque: #fedd00;
+  --cor-fundo: #f7f7f5;
+  --cor-texto: #262626;
+  --cor-caixa: rgba(255, 255, 255, 0.92);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--cor-primaria);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 32px;
+}
+
+.faixa {
+  background-color: var(--cor-secundaria);
+  height: 15px;
+}
+
+.imagem-principal {
+  position: relative;
+}
+
+.foto-grande {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.dados,
+.clima {
+  background-color: var(--cor-caixa);
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 15px;
+}
+
+.dados h2,
+.clima h2 {
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 10px;
+  margin: -15px -15px 15px -15px;
+  border-radius: 8px 8px 0 0;
+}
+
+.dados p,
+.clima p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.dados span:first-child,
+.clima span:first-child {
+  font-weight: bold;
+}
+
+.icone-svg {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 15px auto;
+}
+
+@media (max-width: 480px) {
+
+  .icone-svg {
+    width: 35px;
+    height: 35px;
+  }
+
+}
+
+footer {
+  background-color: var(--cor-primaria);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+@media (min-width: 700px) {
+
+  .imagem-principal {
+    height: calc(100vh - 170px);
+  }
+
+  .foto-grande {
+    width: 100%;
+    max-height: none;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .dados {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 280px;
+    margin: 0;
+  }
+
+  .clima {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 280px;
+    margin: 0;
+  }
+
+  .icone-svg {
+    display: none;
+  }
+
+  .clima h2::after {
+    content: "⛅";
+    margin-left: 10px;
+  }
+
+}
